@@ -5,6 +5,24 @@ int main(){
     
 
     printf("enter your choice");
+    printf("\nenter 0 for sum of two number");
+    printf("\nenter 1 for simple interest");
+    printf("\nenter 2 for sum of two number");
+    printf("\nenter 3 for finnding odd or even ");
+     printf("\nenter 4 for finnding positive or negative number ");
+     printf("\nenter 5 for sum of input given ");
+     printf("\nenter 6for sum of n number ");
+     printf("\nenter 7 for factorial finding ");
+     printf("\nenter 8 for electricity bill ");
+     printf("\nenter 9 for hcf lcm ");
+         printf("\nenter 10 for  fibnacii series ");
+           printf("\nenter 11 for  number of digits");
+           printf("\nenter 12 for  reverse f digit ");
+   printf("\nenter 13 for  prime factor");
+   printf("\nenter 14 to if number is greater than n1, less than n2 and divisible by 7.   ");
+   printf("\nenter 15 for  prime number");
+
+
     scanf("%d",&n);
     switch(n){
         case 0:{
@@ -129,17 +147,22 @@ int main(){
         break;}
 
         case 10:
-      
-     
-      {  int ab=1,ba=1,f1;
-        printf("enter the number");
-        scanf("%d",&f1);
-        for(int i=1;i<=f1/2;i++){
-        printf("%d%d",ab,ba);
-        ab=ab+ba;
-        ba=ab+ba;
-            
-        }
+      {
+    int n, first = 0, second = 1, next;
+
+    printf("Enter the number of finonacci terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for (int i = 0; i < n; i++) {
+        printf("%d ", first);
+        next = first + second;
+        first = second;
+        second = next;
+    }
+    printf("\n");
+    
           break;}
 
        case 11:
@@ -197,9 +220,12 @@ int main(){
          printf("the number is divisible by 7\n");
          else 
           printf("the number is not divisible by 7\n");
+        
        
 
         break;}
+        
+
 
 
         default:
