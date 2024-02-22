@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+
+int bd(int a){
+     int rem, base=1,y=0; int i=0;
+    while(a>0){
+    rem=a%10;
+    a=a/10;
+    y=y+rem*pow(2,i);
+    i++;}
+    return y;
+    }
+
+    
+      
+
+    
+int main(){
+    int n,n1,a;
+    printf("enter two binary number");
+
+    scanf("%d %d",&n,&n1);
+    a=bd(n)+bd(n1);
+    int arr[20],rem,i=1;
+        while(a>0){
+            rem=a%2;
+            arr[i]=rem;
+            a=a/2;
+            i++;
+
+        }
+        for(int j=i-1;j>=0;j--)
+        printf("%d",arr[j]);
+        return 0;
+}
