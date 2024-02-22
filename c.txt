@@ -4,7 +4,7 @@ int main(){
 
     
 
-    printf("enter your choice");
+    
     printf("\nenter 0 for sum of two number");
     printf("\nenter 1 for simple interest");
     printf("\nenter 2 for sum of two number");
@@ -21,6 +21,8 @@ int main(){
    printf("\nenter 13 for  prime factor");
    printf("\nenter 14 to if number is greater than n1, less than n2 and divisible by 7.   ");
    printf("\nenter 15 for  prime number");
+   printf("\nenter any greater number to break");
+   printf("\nenter your choice");
 
 
     scanf("%d",&n);
@@ -234,7 +236,7 @@ int main(){
 printf("not prime");
 break;}
 else 
-printf(" prime");
+printf(" prime");}
 break;}
 
 
@@ -255,6 +257,6 @@ break;}
         
 
 
-    }
+    
   return 0;
-}
+}}
