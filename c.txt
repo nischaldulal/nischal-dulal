@@ -224,7 +224,21 @@ int main(){
        
 
         break;}
-        
+        case 15:
+        {
+        int a;
+        printf("enter the number");
+        scanf("%d",&a);
+        for(int i=2;i<a;i++)
+{ if(a%i==0){
+printf("not prime");
+break;}
+else 
+printf(" prime");
+break;}
+
+
+
 
 
 
