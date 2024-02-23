@@ -228,21 +228,22 @@ int main(){
         break;}
         case 15:
         {
-        int a;
+        int a;p=0;
         printf("enter the number");
         scanf("%d",&a);
         for(int i=2;i<a;i++)
 { if(a%i==0){
+    p=1;
+break;}
+if (a==1)
+printf(" prime");
+else
 printf("not prime");
 break;}
-else 
-printf(" prime");}
-break;}
 
 
 
-
-
+      
 
         default:
         printf("out of range");
