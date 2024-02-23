@@ -228,22 +228,34 @@ int main(){
         break;}
         case 15:
         {
-        int a;p=0;
-        printf("enter the number");
-        scanf("%d",&a);
-        for(int i=2;i<a;i++)
-{ if(a%i==0){
-    p=1;
+int n, i, flag = 0;
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
+
+ 
+  if (n == 0 || n == 1)
+    flag = 1;
+
+  for (i = 2; i <= n / 2; ++i) {
+
+    
+    if (n % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  
+  if (flag == 0)
+    printf("%d is a prime number.", n);
+  else
+    printf("%d is not a prime number.", n);
 break;}
-if (a==1)
-printf(" prime");
-else
-printf("not prime");
-break;}
 
 
 
-      
+
+
 
         default:
         printf("out of range");
@@ -257,7 +269,7 @@ break;}
         
         
 
-
+}
     
   return 0;
-}}
+}
